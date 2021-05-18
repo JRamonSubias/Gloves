@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_signs"
+    app:startDestination="@id/bluetoothShow">
+
+    <fragment
+        android:id="@+id/bluetoothShow"
+        android:name="com.esime.gloves.UI.ActivityPatient.BluetoothShow"
+        android:label="fragment_bluetooth_show"
+        tools:layout="@layout/fragment_bluetooth_show" >
+        <action
+            android:id="@+id/action_bluetoothShow_to_signs_1"
+            app:destination="@id/signs_1" />
+    </fragment>
+    <fragment
+        android:id="@+id/signs_1"
+        android:name="com.esime.gloves.UI.ActivityPatient.Signs_1"
+        android:label="fragment_signs1"
+        tools:layout="@layout/fragment_signs1" >
+        <action
+            android:id="@+id/action_signs_1_to_signs_2"
+            app:destination="@id/signs_2" />
+    </fragment>
+    <fragment
+        android:id="@+id/signs_2"
+        android:name="com.esime.gloves.UI.ActivityPatient.Signs_2"
+        android:label="fragment_signs_2"
+        tools:layout="@layout/fragment_signs_2" >
+        <action
+            android:id="@+id/action_signs_2_to_signs_1"
+            app:destination="@id/signs_1" />
+    </fragment>
+</navigation>

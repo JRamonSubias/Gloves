@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="id_activityScreenTitles">
+        <item></item>
+        <item>Perfil</item>
+        <item>Notificaciones</item>
+        <item>Configuraciones</item>
+        <item/>
+        <item>@string/logOut</item>
+    </string-array>
+
+    <string-array name="id_activitySreenIcon">
+        <item>@drawable/ic_close</item>
+        <item>@drawable/ic_profile</item>
+        <item>@drawable/ic_notifications</item>
+        <item>@drawable/ic_settings</item>
+        <item>0</item>
+        <item>@drawable/ic_logout</item>
+    </string-array>
+
+
+</resources>

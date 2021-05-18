@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "139155905928",
+    "firebase_url": "https://pruebacloudm-default-rtdb.firebaseio.com",
+    "project_id": "pruebacloudm",
+    "storage_bucket": "pruebacloudm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139155905928:android:fcfda2949262a61369ae3d",
+        "android_client_info": {
+          "package_name": "com.esime.arduinoblefbc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139155905928-ds964ink8el1n0jor4ft154m7i0or427.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.esime.arduinoblefbc",
+            "certificate_hash": "6e025bba959e406f79f95b05335c6fb47660d952"
+          }
+        },
+        {
+          "client_id": "139155905928-bguf8g2ul4gct20qc6um921u02cafi04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfFSVuR2cp4uLZ7mTTJ9Jy2T9O-_SbAm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139155905928-bguf8g2ul4gct20qc6um921u02cafi04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139155905928:android:4183b1631a1ec7e069ae3d",
+        "android_client_info": {
+          "package_name": "com.esime.gloves"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139155905928-7qmtucr8lk23tv40c1qr6kuk882qpcu7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.esime.gloves",
+            "certificate_hash": "6e025bba959e406f79f95b05335c6fb47660d952"
+          }
+        },
+        {
+          "client_id": "139155905928-bguf8g2ul4gct20qc6um921u02cafi04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfFSVuR2cp4uLZ7mTTJ9Jy2T9O-_SbAm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139155905928-bguf8g2ul4gct20qc6um921u02cafi04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139155905928:android:673ad43f741cd0c369ae3d",
+        "android_client_info": {
+          "package_name": "com.esime.pruebacloudmessagin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139155905928-lbvajvpptivu38bfctc5ldvg5v3s3rc9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.esime.pruebacloudmessagin",
+            "certificate_hash": "6e025bba959e406f79f95b05335c6fb47660d952"
+          }
+        },
+        {
+          "client_id": "139155905928-bguf8g2ul4gct20qc6um921u02cafi04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfFSVuR2cp4uLZ7mTTJ9Jy2T9O-_SbAm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "139155905928-bguf8g2ul4gct20qc6um921u02cafi04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

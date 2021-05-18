@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Gloves</string>
+
+
+    <string name="SignIn">Iniciar Sesion</string>
+    <string name="SignUp">Registrarse</string>
+    <string name="email">Correo Electronico</string>
+    <string name="userName">Nombre de Usuario</string>
+    <string name="Password">Contraseña </string>
+    <string name="ConfirmPassword">Confirmar Contraseña </string>
+    <string name="ForgotPassword">¿Olvido Contraseña? </string>
+    <string name="names">Nombre(s)</string>
+    <string name="surname">Apellido</string>
+    <string name="old">Edad</string>
+    <string name="gender">Sexo</string>
+    <string name="man">Hombre</string>
+    <string name="woman">Mujer</string>
+    <string name="configuration">Configuración </string>
+    <string name="notification">Notificación</string>
+    <string name="sign1">Señal numero 1 </string>
+    <string name="sign2">Señal numero 2</string>
+    <string name="sign3">Señal numero 3</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="patient">Paciente</string>
+    <string name="assitent">Cuidador</string>
+    <string name="registerPatient">- Registrar Paciente -</string>
+    <string name="logOut">Cerrar Sesión</string>
+
+
+    <string name="putEmail">- Ingrese el Nombre de usuario del Paciente -</string>
+
+    <string name="addUserPatient">Añadir Paciente</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="patientOK">El paciente esta bien</string>
+    <string name="addPatient">Añadir Paciente</string>
+    <string name="deletePatient">Eliminar Paciente</string>
+    <string name="chooseType">- Escoje un tipo de Usuario -</string>
+    <string name="Database">Notificaciones</string>
+    <string name="deleteAllNotifications">Borrar todas las notificaciones</string>
+    <string name="deleteUser">Eliminar Cuenta</string>
+
+
+</resources>
