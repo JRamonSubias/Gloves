@@ -6,6 +6,7 @@ import androidx.navigation.Navigation;
 import android.bluetooth.BluetoothDevice;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.WindowManager;
 
 import com.esime.gloves.BLE.BleControllListener;
 import com.esime.gloves.BLE.BleController;
@@ -27,6 +28,7 @@ public class ActivityPatient extends AppCompatActivity implements BleControllLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         simpleDateFormat = SimpleDateFormat.getDateTimeInstance(DateFormat.SHORT,DateFormat.SHORT);
         bleController = BleController.getInstance(InstanceApp.getContext());
         bleController.addBLEControllListener(this);
