@@ -22,6 +22,14 @@ public class InstanceApp extends Application {
     public static final String USER_PATIENT ="USER_PATIENT";
     public static final String TOPIC ="Topic";
 
+    public static final String TITLE_DELETE_NOTIFICACIONES = "Eliminar Notificaciones";
+    public static final String QUESTION_NOTIFICACIONES = "¿Estas seguro de borrar las notificaciones?";
+    public static final String TITLE_DELETE_ACCOUNT = "Eliminar Cuenta";
+    public static final String QUESTION_DELETE_ACCOUNT ="¿Estas seguro que quieres eliminar la cuenta?";
+    public static final String CANCEL = "Cancelar";
+    public static final String DELETE = "Eliminar";
+
+
 
     private static InstanceApp instance;
 

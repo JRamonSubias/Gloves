@@ -9,6 +9,7 @@ import android.os.Bundle;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import android.util.Log;
@@ -74,15 +75,16 @@ public class Signs_1 extends Fragment implements BleControllListener {
 
 
     private void ConfigById(View view) {
-        ivGreen = view.findViewById(R.id.imageView_green);
-        ivYellow = view.findViewById(R.id.imageView_yellow);
-        ivRed = view.findViewById(R.id.imageView_red);
+        ivGreen = view.findViewById(R.id.iv_s1_green);
+        ivYellow = view.findViewById(R.id.iv_s1_yellow);
+        ivRed = view.findViewById(R.id.iv_s1_red);
 
 
-        signl1= view.findViewById(R.id.senial_1);
-        signl2= view.findViewById(R.id.senial_2);
-        signl3= view.findViewById(R.id.senial_3);
+        signl1= view.findViewById(R.id.tv_s1_first);
+        signl2= view.findViewById(R.id.tv_s1_second);
+        signl3= view.findViewById(R.id.tv_s1_third);
     }
+
 
     @Override
     public void BLEControllerConnected() {

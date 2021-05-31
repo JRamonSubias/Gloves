@@ -38,6 +38,12 @@
     <string name="Database">Notificaciones</string>
     <string name="deleteAllNotifications">Borrar todas las notificaciones</string>
     <string name="deleteUser">Eliminar Cuenta</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="example_title_dialogf">Notificaciones</string>
+    <string name="example_question_dialog">¿Estas seguro que quiere borrar las notificaciones?</string>
+    <string name="decline">No</string>
+    <string name="delete">Borrar</string>
 
 
 </resources>

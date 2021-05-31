@@ -100,7 +100,7 @@ public class FirebaseRepository {
         if(registerPatient == null){
             registerPatient = new MutableLiveData<>();
         }
-        mAuth.SignUp(username+"@gmail.com",password).addOnCompleteListener(task -> {
+        mAuth.SignUp(username+"@gloves.com",password).addOnCompleteListener(task -> {
             if(!task.isSuccessful()){
                 registerPatient.setValue(false);
                 return;
@@ -148,18 +148,27 @@ public class FirebaseRepository {
             signIn = new MutableLiveData<>();
         }
         if(SharedPreferenceManager.getSomeStringValue(InstanceApp.CHOOSE_USER).equals(InstanceApp.PATIENT)){
-            email += "@gmail.com";
+            email += "@gloves.com";
+        }else if(android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+
         }
-        mAuth.SignIn(email,password).addOnCompleteListener(task -> {
-            Log.i(InstanceApp.TAG_Firebase,task.getResult().toString());
-            if(task.isSuccessful()){
-                signIn.setValue(true);
-            }else{
-                signIn.setValue(false);
-            }
-        });
+
+
+        try {
+            mAuth.SignIn(email, password).addOnCompleteListener(task -> {
+                Log.i(InstanceApp.TAG_Firebase, task.getResult().toString());
+                if (task.isSuccessful()) {
+                    signIn.setValue(true);
+                } else {
+                    signIn.setValue(false);
+                }
+            });
+        }catch (Exception e){
+            e.getStackTrace();
+        }
         return signIn;
     }
+
 
     public void ChangeStatusPatient(Boolean conection){
         Map<String,Object> status = new HashMap<>();

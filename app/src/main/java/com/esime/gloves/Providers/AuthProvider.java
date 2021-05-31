@@ -43,4 +43,8 @@ public class AuthProvider  {
         }
         return exist;
     }
+
+    public Task<Void> deleteUser(){
+        return mAuth.getCurrentUser().delete();
+    }
 }

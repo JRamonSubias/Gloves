@@ -18,4 +18,11 @@ public class RoomViewModel extends ViewModel {
     public MutableLiveData<List<NotificationEntity>> getAllNotifications(){
         return mRepository.getAllNotifications();
     }
+
+    public void  DeleteNotifications(){
+        mRepository.DeleteAllNotifications();
+    }
+
+
+
 }

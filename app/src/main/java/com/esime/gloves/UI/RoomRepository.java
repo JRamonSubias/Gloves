@@ -25,5 +25,12 @@ public class RoomRepository {
         return listNotificationLivedata;
     }
 
+    public void DeleteAllNotifications(){
+        List<NotificationEntity> list = notificationDao.selectAllNotification();
+        for (NotificationEntity notification: list) {
+            notificationDao.delete(notification);
+        }
+    }
+
 
 }

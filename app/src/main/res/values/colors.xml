@@ -20,6 +20,7 @@
     <color name="pink">#DC54F4</color>
     <color name="grey">#6A6A6A</color>
     <color name="lightGrey">#9E9E9E</color>
+    <color name="transparente">#00000000</color>
 
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#80d8ff</color>
 </resources>

@@ -18,8 +18,6 @@ import retrofit2.Call;
 
 public class NotificationProviders {
 
-
-
     private String url ="https://fcm.googleapis.com/";
 
     public NotificationProviders() {
