@@ -14,9 +14,9 @@
         android:layout_height="55dp"
         android:layout_weight="1"
         android:src="@drawable/yellow_on"
-        app:layout_constraintBottom_toTopOf="@+id/iv_s1_red"
-        app:layout_constraintStart_toStartOf="@+id/iv_s1_green"
-        app:layout_constraintTop_toBottomOf="@+id/iv_s1_green" />
+        app:layout_constraintBottom_toTopOf="@id/iv_s1_red"
+        app:layout_constraintStart_toStartOf="@id/iv_s1_green"
+        app:layout_constraintTop_toBottomOf="@id/iv_s1_green" />
 
 
     <ImageView
@@ -26,8 +26,8 @@
         android:layout_weight="1"
         android:src="@drawable/red_on"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/iv_s1_yellow"
-        app:layout_constraintTop_toBottomOf="@+id/iv_s1_yellow" />
+        app:layout_constraintStart_toStartOf="@id/iv_s1_yellow"
+        app:layout_constraintTop_toBottomOf="@id/iv_s1_yellow" />
 
     <ImageView
         android:id="@+id/iv_s1_green"
@@ -35,8 +35,8 @@
         android:layout_height="55dp"
         android:layout_weight="1"
         android:src="@drawable/green_on"
-        app:layout_constraintBottom_toTopOf="@+id/iv_s1_yellow"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@id/iv_s1_yellow"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -44,31 +44,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:text="Me duele algo "
+        android:text="Quiero ir al baño"
         android:textColor="@color/black"
         android:textSize="36sp"
-        app:layout_constraintStart_toEndOf="@+id/iv_s1_green"
-        app:layout_constraintTop_toTopOf="@+id/iv_s1_green" />
+        app:layout_constraintStart_toEndOf="@id/iv_s1_green"
+        app:layout_constraintTop_toTopOf="@id/iv_s1_green" />
 
     <TextView
         android:id="@+id/tv_s1_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Necesito compañía "
+        android:text="Quiero Comer "
         android:textColor="@color/black"
         android:textSize="36sp"
         app:layout_constraintStart_toStartOf="@+id/tv_s1_first"
-        app:layout_constraintTop_toTopOf="@+id/iv_s1_yellow" />
+        app:layout_constraintTop_toTopOf="@id/iv_s1_yellow" />
 
     <TextView
         android:id="@+id/tv_s1_third"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Necesito ayuda"
+        android:text="Necesito algo"
         android:textColor="@color/black"
         android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="@+id/tv_s1_second"
-        app:layout_constraintTop_toTopOf="@+id/iv_s1_red" />
+        app:layout_constraintStart_toStartOf="@id/tv_s1_second"
+        app:layout_constraintTop_toTopOf="@id/iv_s1_red" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

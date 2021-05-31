@@ -87,6 +87,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:visibility="invisible"
         app:lottie_autoPlay="false"
+        android:elevation="10dp"
         app:lottie_rawRes="@raw/send_lottie" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

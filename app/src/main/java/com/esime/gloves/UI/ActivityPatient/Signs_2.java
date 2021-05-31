@@ -1,6 +1,7 @@
 package com.esime.gloves.UI.ActivityPatient;
 
 import android.Manifest;
+import android.animation.Animator;
 import android.animation.ValueAnimator;
 import android.bluetooth.BluetoothDevice;
 import android.content.pm.ActivityInfo;
@@ -67,10 +68,6 @@ public class Signs_2 extends Fragment implements BleControllListener {
         View view =  inflater.inflate(R.layout.fragment_signs_2, container, false);
         ConfigById(view);
 
-        ivGreen.setOnClickListener(v -> {
-            OnLottieAnimation();
-        });
-
         return view;
     }
 
@@ -88,13 +85,36 @@ public class Signs_2 extends Fragment implements BleControllListener {
 
 
     private void  OnLottieAnimation(){
+            lottieAnimationView.setVisibility(View.VISIBLE);
             lottieAnimationView.setSpeed(1f);
             lottieAnimationView.playAnimation();
+            lottieAnimationView.addAnimatorListener(new Animator.AnimatorListener() {
+                @Override
+                public void onAnimationStart(Animator animation) {
+
+                }
+
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    goToSign1();
+                }
+
+                @Override
+                public void onAnimationCancel(Animator animation) {
+
+                }
+
+                @Override
+                public void onAnimationRepeat(Animator animation) {
+
+                }
+            });
+
 
     }
 
     private void goToSign1(){
-        Navigation.findNavController(getActivity(),R.id.nav_host_fragment_patient).navigate(R.id.signs_2);
+        Navigation.findNavController(getActivity(),R.id.nav_host_fragment_patient).navigate(R.id.action_signs_2_to_signs_1);
     }
     @Override
     public void BLEControllerConnected() {
@@ -138,7 +158,7 @@ public class Signs_2 extends Fragment implements BleControllListener {
                         simpleDateFormat.format(new Date()),
                         "Tipo 1");
                 fcmProvider.sendNotification(data);
-                goToSign1();
+                OnLottieAnimation();
                 break;
             case "5":
                 data = new Data(SharedPreferenceManager.getSomeStringValue(InstanceApp.USER_PATIENT),
@@ -148,7 +168,7 @@ public class Signs_2 extends Fragment implements BleControllListener {
                         simpleDateFormat.format(new Date()),
                         "Tipo 2");
                 fcmProvider.sendNotification(data);
-                goToSign1();
+               OnLottieAnimation();
                 break;
             case "6":
                 Navigation.findNavController(getActivity(),R.id.nav_host_fragment_patient).navigate(R.id.signs_2);
@@ -159,7 +179,7 @@ public class Signs_2 extends Fragment implements BleControllListener {
                         simpleDateFormat.format(new Date()),
                         "Tipo 3");
                 fcmProvider.sendNotification(data);
-                goToSign1();
+                OnLottieAnimation();
                 break;
         }
     }

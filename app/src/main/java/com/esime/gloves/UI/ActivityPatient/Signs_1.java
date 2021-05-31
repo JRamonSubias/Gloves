@@ -1,5 +1,6 @@
 package com.esime.gloves.UI.ActivityPatient;
 
+import android.animation.Animator;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -21,6 +22,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.esime.gloves.BLE.BleControllListener;
 import com.esime.gloves.BLE.BleController;
 import com.esime.gloves.Model.Data;
@@ -42,6 +44,7 @@ public class Signs_1 extends Fragment implements BleControllListener {
     private TextView signl1, signl2,signl3;
     private BleController bleController;
     private Activity activity;
+    private LottieAnimationView lottieAnimationView;
 
     public Signs_1() {
         // Required empty public constructor
@@ -54,6 +57,7 @@ public class Signs_1 extends Fragment implements BleControllListener {
         simpleDateFormat = SimpleDateFormat.getDateTimeInstance(DateFormat.SHORT,DateFormat.SHORT);
         fcmProvider = new FCMProvider();
         activity = getActivity();
+
     }
 
     @Override
@@ -69,6 +73,10 @@ public class Signs_1 extends Fragment implements BleControllListener {
                              Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_signs1, container, false);
         ConfigById(view);
+
+
+
+
         return view;
     }
 
@@ -83,8 +91,42 @@ public class Signs_1 extends Fragment implements BleControllListener {
         signl1= view.findViewById(R.id.tv_s1_first);
         signl2= view.findViewById(R.id.tv_s1_second);
         signl3= view.findViewById(R.id.tv_s1_third);
+
+        lottieAnimationView = view.findViewById(R.id.lottie_send);
     }
 
+    private void  OnLottieAnimation(){
+        lottieAnimationView.setVisibility(View.VISIBLE);
+        lottieAnimationView.setSpeed(1f);
+        lottieAnimationView.playAnimation();
+        lottieAnimationView.addAnimatorListener(new Animator.AnimatorListener() {
+            @Override
+            public void onAnimationStart(Animator animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                lottieAnimationView.setVisibility(View.INVISIBLE);
+            }
+
+            @Override
+            public void onAnimationCancel(Animator animation) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animator animation) {
+
+            }
+        });
+
+
+    }
+
+    private void goToSign2() {
+            Navigation.findNavController(getActivity(),R.id.nav_host_fragment_patient).navigate(R.id.action_signs_1_to_signs_2);
+    }
 
     @Override
     public void BLEControllerConnected() {
@@ -129,6 +171,7 @@ public class Signs_1 extends Fragment implements BleControllListener {
                         simpleDateFormat.format(new Date()),
                         "Tipo 1");
                 fcmProvider.sendNotification(data);
+                OnLottieAnimation();
                 break;
             case "5":
                 data = new Data(SharedPreferenceManager.getSomeStringValue(InstanceApp.USER_PATIENT),
@@ -138,10 +181,10 @@ public class Signs_1 extends Fragment implements BleControllListener {
                         simpleDateFormat.format(new Date()),
                         "Tipo 2");
                 fcmProvider.sendNotification(data);
+                OnLottieAnimation();
                 break;
             case "6":
-                Navigation.findNavController(activity,R.id.nav_host_fragment_patient).navigate(R.id.signs_2);
-                onDestroy();
+                        goToSign2();
                 break;
         }
     }
