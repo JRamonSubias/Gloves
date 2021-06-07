@@ -12,6 +12,7 @@
     <color name="PrimaryBlueDark">#b5ffff</color>
     <color name="PrimaryBlueLigth">#49a7cc</color>
     <color name="PrimaryBlueText">#0072cc</color>
+    <color name="background_login">#43608A</color>
 
 
     <color name="red">#B61010</color>

@@ -16,13 +16,22 @@ public class ActivityPresentation extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        setTheme(R.style.Theme_Gloves);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_presentation);
+
+
     }
 
     @Override
     protected void onStart() {
         super.onStart();
+
       if(SharedPreferenceManager.getSomeStringValue(InstanceApp.CHOOSE_USER) != null )
          if(SharedPreferenceManager.getSomeStringValue(InstanceApp.CHOOSE_USER).equals(InstanceApp.ASSISTANT)){
             if(FirebaseAuth.getInstance().getCurrentUser() != null){

@@ -25,7 +25,7 @@ import com.google.android.material.textfield.TextInputLayout;
 
 public class SignIn extends Fragment {
     private TextInputLayout etEmail,etPassword;
-    private TextView tvForgetPassword,tvSignUp;
+    private TextView tvSignUp;
     private Button btnSignIn;
     private String email, password;
     private AuthProvider mAuth;
@@ -33,7 +33,7 @@ public class SignIn extends Fragment {
     private PresentationViewModel viewModel;
 
     public SignIn() {
-        // Required empty public constructor
+
     }
 
 
@@ -107,7 +107,6 @@ public class SignIn extends Fragment {
         etEmail = viewGroup.findViewById(R.id.singInETUser);
         etPassword = viewGroup.findViewById(R.id.singInEtpassword);
         btnSignIn = viewGroup.findViewById(R.id.singInBtn);
-        tvForgetPassword = viewGroup.findViewById(R.id.singIntextView);
         tvSignUp = viewGroup.findViewById(R.id.singIn_textViewSingUp);
     }
 }

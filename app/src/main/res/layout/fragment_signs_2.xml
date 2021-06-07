@@ -13,7 +13,7 @@
     android:layout_width="55dp"
     android:layout_height="55dp"
     android:layout_weight="1"
-    android:src="@drawable/yellow_on"
+    android:src="@drawable/yellow_off"
     app:layout_constraintBottom_toTopOf="@+id/iv_s2_red"
     app:layout_constraintStart_toStartOf="@+id/iv_s2_green"
     app:layout_constraintTop_toBottomOf="@+id/iv_s2_green" />
@@ -24,7 +24,7 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_weight="1"
-        android:src="@drawable/red_on"
+        android:src="@drawable/red_off"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/iv_s2_yellow"
         app:layout_constraintTop_toBottomOf="@+id/iv_s2_yellow" />
@@ -34,7 +34,7 @@
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_weight="1"
-        android:src="@drawable/green_on"
+        android:src="@drawable/green_off"
         app:layout_constraintBottom_toTopOf="@+id/iv_s2_yellow"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent" />
